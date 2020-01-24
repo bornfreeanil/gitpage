@@ -1,5 +1,4 @@
 # gitpage
 Vedantu Test
 /n
-#Demo
-https://vedantu-test.netlify.com/
+Demo: https://vedantu-test.netlify.com/
