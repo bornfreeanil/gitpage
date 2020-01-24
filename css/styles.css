@@ -1,0 +1,227 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+header{
+    z-index: 32;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: hsla(0,0%,100%,.7);
+    background-color: #24292e;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.side-nav{
+    width: 250px;
+}
+.main-container{
+    width: 100%;
+}
+
+.avatar{
+    width: 100%;
+    display: flex;  
+    box-sizing: border-box;
+}
+
+.avatar img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.side-nav h2#user_name{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.side-nav #user_login{
+    color: #a9a9a9;
+}
+.side-nav .bio{
+    font-size: 12px;
+}
+
+.side-nav .action-item{
+    display: block;
+    margin: 10px 0;
+}
+.side-nav .separator{
+    border-bottom: 1px solid #ddd;
+}
+.side-nav .company, .side-nav .location, .side-nav .email{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Tabs */
+#tabs {
+    width: 100%;
+    border-bottom: solid 1px #CCC;
+    display: inline-block; 
+    padding: 0;
+    /* margin-left: 20px; */
+    box-sizing: border-box;
+}
+#tabs a {cursor:pointer;}
+#tabs li {
+    float: left;
+    list-style: none;
+    margin-right: 5px;
+    outline: none;
+    width: 150px;
+    text-align: center;
+}
+#tabs li a {
+    font-size: small;
+    font-weight: bold;
+    color: #000;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 8px;
+    display: block;
+    background: #FFF;
+    text-decoration: none;
+    outline: none;
+    border-bottom: solid 1px red;
+}
+#tabs li a.inactive{
+    padding-top:5px;
+    padding-bottom:8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color:#666666;
+    outline:none;
+    border-bottom: solid 0px #CCC;
+}
+#tabs li a:hover, #tabs li a.inactive:hover {
+    color: #5685bc;
+    outline:none;
+}
+.tab-container {
+    clear:both;           
+    width:100%; 
+    text-align:left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Repo */
+.repo-item{
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.repo-item .desc{
+    font-size: 13px;
+}
+.repo-item h3{
+    margin: 10px 0;
+}
+.repo-item h3 a{
+    text-decoration: none;
+    color: #007bff;
+}
+.repo-item h3 a:hover{
+    text-decoration: underline;
+}
+.repo-item .details{
+    margin-bottom: 10px;
+}
+.repo-item .details .circle{
+    width: 10px;
+    height: 10px;
+    background-color: #f1e159;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+.repo-item .details .lang, .repo-item .details .time{
+    color: #777;
+}
+.repo-item .details .time{
+    margin-left: 30px;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    text-align: center;
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+}
+
+.input-half{
+    width: 50%;
+    margin-right: 15px;
+}
+.badge{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.form-control, .form-select{
+    padding: 6px 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+}
+

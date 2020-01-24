@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            Header
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <section class="container">
+        <div class="flex-container">
+            <div class="side-nav">
+                <div class="avatar"><img src="" id="user_avatar_url" alt="Name"/></div>
+                <h2 id="user_name"></h2>
+                <div id="user_login"></div>
+                <p class="bio" id="user_bio"></p>
+                <div class="action-item">
+                    <button class="btn">Edit Bio</button>
+                </div>
+
+                <div class="separator"></div>
+                <div class="company" id="user_company"></div>
+                <div class="location" id="user_location"></div>
+                <div class="email" id="user_email"></div>
+            </div>
+            <div class="main-container">
+                <div class="tabs">
+                    <ul id="tabs">
+                        <li><a target="overviewTab">Overview</a></li>
+                        <li><a target="reposTab">Repositories <span class="badge" id="repo_badge">..</span></a></li>
+                        <li><a target="starsTab">Stars  <span class="badge">16</span></a> </li>
+                        <li><a target="followersTab">Followers <span class="badge" id="user_followers">..</span></a> </li>
+                        <li><a target="followingTab">Following <span class="badge" id="user_following">..</span></a> </li>
+                    </ul>
+                    <div class="tab-container" id="overviewTab">Overview Content</div>
+                    <div class="tab-container" id="reposTab">
+                        <div class="filter">
+                            <input id="search_by_name" type="text" class="form-control input-half" placeholder="Search repositories..."/> 
+                            <select class="form-select" >
+                                <option class="All">Type:All</option>
+                            </select>
+                            <select id="filter_by_lang" class="form-select" >
+                                <option value="All">Language: All</option>
+                                <option value="JavaScript">Language: JavaScript</option>
+                                <option value="HTML">Language: Html</option>
+                                <option value="CSS">Language: CSS</option>
+                            </select>
+                        </div>
+                        <div id="repo_content"></div>
+                    </div>
+                    <div class="tab-container" id="starsTab">Stars Content</div>
+                    <div class="tab-container" id="followersTab"> Followers Content</div>
+                    <div class="tab-container" id="followingTab"> Following Content</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/configs.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
