@@ -1,4 +1,3 @@
 # gitpage
-Vedantu Test
-/n
+Vedantu Test\
 Demo: https://vedantu-test.netlify.com/
